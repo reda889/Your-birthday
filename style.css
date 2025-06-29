@@ -155,8 +155,8 @@ h1 {
     }
     
     .message-container {
-        width: 85%;
-        margin-top: 400px;
+        width: 95%;
+        margin-top: 450px;
         padding: 20px;
     }
     
@@ -171,7 +171,7 @@ h1 {
     .cake {
         width: 300px;
         height: 400px;
-        top: 30px;
+        top: 10px;
     }
     
     .music-btn {
