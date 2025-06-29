@@ -1,49 +1,35 @@
-// فتح وإغلاق البطاقة
-function openCard() {
-    const card = document.getElementById('birthdayCard');
-    card.classList.add('opened');
-    
-    // إنشاء البالونات بعد فتح البطاقة
-    createBalloons();
-    
-    // عرض رسالة تهنئة مكتوبة تدريجياً
-    typeWriter();
+// نص التهنئة
+const message = "كل عام وأنت بألف خير! أتمنى لك يوم ميلاد سعيد مليء بالفرح والضحك والحب. 🎉🎂🎈";
+let currentChar = 0;
+let typingInterval;
+const audio = document.getElementById('birthday-audio');
+
+// الانتقال للصفحة الثانية
+function nextPage() {
+    document.getElementById('page1').classList.remove('active');
+    document.getElementById('page2').classList.add('active');
+    startTyping();
 }
 
-// إنشاء بالونات متحركة
-function createBalloons() {
-    const balloonsContainer = document.querySelector('.balloons');
-    const colors = ['#ff4081', '#ffeb3b', '#4caf50', '#2196f3', '#9c27b0'];
+// تأثير الكتابة
+function startTyping() {
+    const messageElement = document.getElementById('typed-message');
+    messageElement.innerHTML = '';
+    currentChar = 0;
     
-    for (let i = 0; i < 8; i++) {
-        const balloon = document.createElement('div');
-        balloon.className = 'balloon';
-        balloon.style.backgroundColor = colors[i % colors.length];
-        balloon.style.animationDelay = `${i * 0.5}s`;
-        balloonsContainer.appendChild(balloon);
-    }
-}
-
-// تأثير الكتابة على الرسالة
-function typeWriter() {
-    const message = "أطيب التمنيات بمناسبة عيد ميلادك! أتمنى لك يومًا سعيدًا مليئًا بالفرح والضحك والحب. 🌸🎉";
-    const element = document.getElementById('birthdayMessage');
-    element.innerHTML = '';
-    let i = 0;
-    
-    const typing = setInterval(() => {
-        if (i < message.length) {
-            element.innerHTML += message.charAt(i);
-            i++;
+    clearInterval(typingInterval);
+    typingInterval = setInterval(() => {
+        if (currentChar < message.length) {
+            messageElement.innerHTML += message[currentChar];
+            currentChar++;
         } else {
-            clearInterval(typing);
+            clearInterval(typingInterval);
         }
-    }, 100);
+    }, 70); // سرعة الكتابة (كل 70 مللي ثانية)
 }
 
-// تشغيل الموسيقى
-function playMusic() {
-    const audio = document.getElementById('birthdayAudio');
+// تشغيل/إيقاف الموسيقى
+function toggleMusic() {
     const btn = document.querySelector('.music-btn');
     
     if (audio.paused) {
@@ -55,15 +41,10 @@ function playMusic() {
     }
 }
 
-// حفظ اسم المرسل عند تغييره
-document.getElementById('senderName').addEventListener('input', function() {
-    localStorage.setItem('senderName', this.value);
-});
-
-// استعادة اسم المرسل إذا كان محفوظاً
-window.onload = function() {
-    const savedName = localStorage.getItem('senderName');
-    if (savedName) {
-        document.getElementById('senderName').value = savedName;
+// تشغيل الموسيقى تلقائياً عند الوصول للصفحة الثانية (اختياري)
+document.getElementById('page2').addEventListener('transitionend', function() {
+    if (this.classList.contains('active')) {
+        // يمكنك إلغاء التعليق عن السطر التالي لتشغيل الموسيقى تلقائياً
+        // toggleMusic();
     }
-};
+});
