@@ -106,15 +106,21 @@ body {
 }
 
 .message-container {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85); /* زيادة الشفافية قليلاً */
     backdrop-filter: blur(5px);
-    width: 70%;
-    max-width: 600px;
-    padding: 30px;
-    border-radius: 15px;
-    margin-top: 200px;
+    width: 80%; /* زيادة العرض */
+    max-width: 700px; /* زيادة الحد الأقصى للعرض */
+    padding: 40px; /* زيادة المساحة الداخلية */
+    border-radius: 20px; /* زوايا أكثر استدارة */
+    margin-top: 180px; /* تعديل الموضع الرأسي */
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* ظل أكثر وضوحاً */
+    min-height: 300px; /* ارتفاع أدنى مضمون */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto; /* إمكانية التمرير إذا كان النص طويلاً جداً */
+    max-height: 60vh; /* ارتفاع أقصى مناسب */
 }
 
 h1 {
@@ -125,9 +131,12 @@ h1 {
 
 #typed-message {
     color: #555;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    min-height: 100px;
+    font-size: 1.3rem; /* زيادة حجم الخط */
+    line-height: 1.8; /* زيادة تباعد الأسطر */
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 90%;
+    word-wrap: break-word; /* تجنب خروج النص من الصندوق */
 }
 
 .music-btn {
