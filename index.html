@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تهنئة بعيد الميلاد</title>
+    <title>تهنئة عيد ميلاد</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="card" id="birthdayCard">
-            <div class="card-front" onclick="openCard()">
-                <h1>اضغط لفتح البطاقة</h1>
-                <img src="assets/images/cake.png" alt="كعكة عيد ميلاد" class="cake">
+        <!-- الصفحة الأولى -->
+        <div class="page active" id="page1">
+            <img src="assets/images/card1.png" alt="بطاقة عيد ميلاد" class="card-image">
+            <button class="next-btn" onclick="nextPage()">التالي →</button>
+        </div>
+        
+        <!-- الصفحة الثانية -->
+        <div class="page" id="page2">
+            <img src="assets/images/cake.gif" alt="كعكة عيد ميلاد" class="cake">
+            <div class="message-container">
+                <h1>كل عام وأنت بخير!</h1>
+                <p id="typed-message"></p>
             </div>
-            <div class="card-inside" id="cardInside">
-                <h2>كل عام وأنت بخير!</h2>
-                <p id="birthdayMessage">أطيب التمنيات بمناسبة عيد ميلادك!</p>
-                <div class="balloons"></div>
-                <button onclick="playMusic()" class="music-btn">تشغيل الموسيقى</button>
-                <div class="signature">
-                    <p>مع أطيب التحيات،</p>
-                    <input type="text" id="senderName" placeholder="اسمك هنا">
-                </div>
-            </div>
+            <button class="music-btn" onclick="toggleMusic()">تشغيل الموسيقى</button>
         </div>
     </div>
 
-    <audio id="birthdayAudio" src="assets/audio/birthday-song.mp3"></audio>
+    <audio id="birthday-audio" loop>
+        <source src="assets/audio/birthday.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="script.js"></script>
 </body>
 </html>
