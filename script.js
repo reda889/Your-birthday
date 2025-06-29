@@ -25,7 +25,7 @@ function startTyping() {
         } else {
             clearInterval(typingInterval);
         }
-    }, 70); // سرعة الكتابة (كل 70 مللي ثانية)
+    }, 70);
 }
 
 // تشغيل/إيقاف الموسيقى
