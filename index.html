@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تهنئة بعيد الميلاد</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="birthdayCard">
+            <div class="card-front" onclick="openCard()">
+                <h1>اضغط لفتح البطاقة</h1>
+                <img src="assets/images/cake.png" alt="كعكة عيد ميلاد" class="cake">
+            </div>
+            <div class="card-inside" id="cardInside">
+                <h2>كل عام وأنت بخير!</h2>
+                <p id="birthdayMessage">أطيب التمنيات بمناسبة عيد ميلادك!</p>
+                <div class="balloons"></div>
+                <button onclick="playMusic()" class="music-btn">تشغيل الموسيقى</button>
+                <div class="signature">
+                    <p>مع أطيب التحيات،</p>
+                    <input type="text" id="senderName" placeholder="اسمك هنا">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="birthdayAudio" src="assets/audio/birthday-song.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
