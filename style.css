@@ -157,7 +157,8 @@ h1 {
     .message-container {
         width: 95%;
         margin-top: 120px;
-        padding: 40px;
+        padding: 10px;
+        minhight: 100px;
     }
     
     h1 {
