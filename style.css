@@ -147,7 +147,7 @@ h1 {
 
 @media (max-width: 768px) {
     .container {
-        height: 95vh;
+        height: 120vh;
     }
     
     .card-image {
@@ -156,7 +156,7 @@ h1 {
     
     .message-container {
         width: 95%;
-        margin-top: 450px;
+        margin-top: 120px;
         padding: 20px;
     }
     
@@ -169,8 +169,8 @@ h1 {
     }
     
     .cake {
-        width: 300px;
-        height: 400px;
+        width: 150px;
+        height: 200px;
         top: 10px;
     }
     
