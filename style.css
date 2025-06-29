@@ -156,7 +156,7 @@ h1 {
     
     .message-container {
         width: 85%;
-        margin-top: 150px;
+        margin-top: 400px;
         padding: 20px;
     }
     
@@ -169,8 +169,8 @@ h1 {
     }
     
     .cake {
-        width: 120px;
-        height: 120px;
+        width: 300px;
+        height: 400px;
         top: 30px;
     }
     
