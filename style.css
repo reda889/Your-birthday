@@ -133,7 +133,7 @@ h1 {
     color: #555;
     font-size: 1.3rem; /* زيادة حجم الخط */
     line-height: 1.8; /* زيادة تباعد الأسطر */
-    padding: 10px;
+    padding: 5px;
     margin: 0 auto;
     max-width: 90%;
     word-wrap: break-word; /* تجنب خروج النص من الصندوق */
@@ -156,7 +156,7 @@ h1 {
 
     .message-container {
         width: 95%;
-        margin-top: 40px; /* تعديل لرفع الصندوق */
+        margin-top: 10px; /* تعديل لرفع الصندوق */
         padding: 3px;
         margin-bottom: 30px; /* تصحيح الخاصية */
         max-height: 50px; /* تصحيح الكتابة */
