@@ -156,7 +156,7 @@ h1 {
 
     .message-container {
         width: 95%;
-        margin-top: 80px;  /* تم تقليلها من 120px إلى 80px */
+        margin-top: 60px;  /* تم تقليلها من 120px إلى 80px */
         padding: 3px;
         margin-bottom: 30px;
         max-height: 40px;  /* تم تقليلها من 60px إلى 40px */ 
