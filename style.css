@@ -147,33 +147,27 @@ h1 {
 
 @media (max-width: 768px) {
     .container {
-        height: 90vh;
+        height: 90vh; /* تصحيح الوحدة */
     }
-    
+
     .card-image {
-        max-height: 60vh;
+        max-height: 60vh; /* تصحيح الوحدة */
     }
-    
+
     .message-container {
         width: 95%;
-        margin-top: 60px;
+        margin-top: 60px; /* تعديل لرفع الصندوق */
         padding: 3px;
+        margin-bottom: 30px; /* تصحيح الخاصية */
+        max-height: 60px; /* تصحيح الكتابة */
     }
-    
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    #typed-message {
-        font-size: 1.2rem;
-    }
-    
+
     .cake {
         width: 150px;
         height: 200px;
-        top: 20px;
+        top: 10px; /* تعديل لرفع الكعكة */
     }
-    
+}    
     .music-btn {
         bottom: 80px;
     }
