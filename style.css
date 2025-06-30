@@ -156,9 +156,9 @@ h1 {
 
     .message-container {
         width: 95%;
-        margin-top: 60px;  /* تم تقليلها من 120px إلى 80px */
+        margin-top: 50px;  /* تم تقليلها من 120px إلى 80px */
         padding: 3px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         max-height: 40px;  /* تم تقليلها من 60px إلى 40px */ 
     }
 
@@ -167,13 +167,13 @@ h1 {
     }
 
     #typed-message {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .cake {
         width: 150px;
         height: 200px;
-        top: 20px;
+        top: 10px;
     }
 
     .music-btn {
