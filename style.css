@@ -159,7 +159,7 @@ h1 {
         margin-top: 50px;  /* تم تقليلها من 120px إلى 80px */
         padding: 3px;
         margin-bottom: 20px;
-        max-height: 40px;  /* تم تقليلها من 60px إلى 40px */ 
+        max-height: 50px;  /* تم تقليلها من 60px إلى 40px */ 
     }
 
     h1 {
@@ -173,7 +173,7 @@ h1 {
     .cake {
         width: 150px;
         height: 200px;
-        top: 10px;
+        top: 5px;
     }
 
     .music-btn {
