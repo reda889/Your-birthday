@@ -112,7 +112,7 @@ body {
     max-width: 700px; /* زيادة الحد الأقصى للعرض */
     padding: 40px; /* زيادة المساحة الداخلية */
     border-radius: 20px; /* زوايا أكثر استدارة */
-    margin-top: 180px; /* تعديل الموضع الرأسي */
+    margin-top: 100px; /* تعديل الموضع الرأسي */
     text-align: center;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* ظل أكثر وضوحاً */
     min-height: 300px; /* ارتفاع أدنى مضمون */
@@ -131,7 +131,7 @@ h1 {
 
 #typed-message {
     color: #555;
-    font-size: 1.3rem; /* زيادة حجم الخط */
+    font-size: 2rem; /* زيادة حجم الخط */
     line-height: 1.8; /* زيادة تباعد الأسطر */
     padding: 10px;
     margin: 0 auto;
@@ -156,10 +156,10 @@ h1 {
 
     .message-container {
         width: 95%;
-        margin-top: 60px; /* تعديل لرفع الصندوق */
+        margin-top: 20px; /* تعديل لرفع الصندوق */
         padding: 3px;
         margin-bottom: 30px; /* تصحيح الخاصية */
-        max-height: 60px; /* تصحيح الكتابة */
+        max-height: 40px; /* تصحيح الكتابة */
     }
 
     .cake {
